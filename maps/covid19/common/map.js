@@ -24,9 +24,9 @@ function renderMap() {
     })(marker, i));
   }
   // print stats
-  var statsElement = document.getElementById("stats");
+  var statsElement = document.getElementById("covid19Stats");
   if(statsElement){
-      statsElement.innerHtml = "Active case: " + locations.length;
+      statsElement.innerHtml = "| Active case: " + locations.length;
   }
 }
 var map;
