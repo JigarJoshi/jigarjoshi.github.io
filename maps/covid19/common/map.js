@@ -26,7 +26,7 @@ function renderMap() {
   // print stats
   var statsElement = document.getElementById("covid19Stats");
   if(statsElement){
-      statsElement.innerHtml = "| Active case: " + locations.length;
+      statsElement.innerHTML += "| Mapped cases : " + locations.length;
   }
 }
 var map;
