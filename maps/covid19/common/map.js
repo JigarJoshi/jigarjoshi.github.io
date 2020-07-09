@@ -23,6 +23,11 @@ function renderMap() {
       }
     })(marker, i));
   }
+  // print stats
+  var statsElement = document.getElementById("stats");
+  if(statsElement){
+      statsElement.innerHtml = "Active case: " + locations.length;
+  }
 }
 var map;
 var marker;
