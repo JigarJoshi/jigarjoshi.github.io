@@ -18,7 +18,7 @@ function renderMap() {
 
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
       return function() {
-        infowindow.setContent("<p style='font-size:1.5vw;'> Name: " + locations[i][0] + '<br/> Addr: ' + locations[i][3] + "</p>");
+        infowindow.setContent("<h1 style='font-size:4.5vw;'> Name: " + locations[i][0] + '<br/> Addr: ' + locations[i][3] + "</h1>");
         infowindow.open(map, marker);
       }
     })(marker, i));
