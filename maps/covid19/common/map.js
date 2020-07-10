@@ -18,7 +18,7 @@ function renderMap() {
 
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
       return function() {
-        infowindow.setContent("Name: " + locations[i][0] + '<br/> Addr: ' + locations[i][3]);
+        infowindow.setContent("<div style='font-size: 200%;'> Name: " + locations[i][0] + '<br/> Addr: ' + locations[i][3] + "</div>");
         infowindow.open(map, marker);
       }
     })(marker, i));
@@ -54,6 +54,7 @@ function initializeMarker() {
 
       marker = new google.maps.Marker({
         position: pos,
+        animation: google.maps.Animation.DROP,
         map: map,
       });
 
