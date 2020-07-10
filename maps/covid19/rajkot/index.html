@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Rajkot Covid19 positive cases </title>
+    <link rel="stylesheet" href="../common/maps.css">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCaiBHvv4kY8RfXUC5XQqLuBHcaR1Mq_vo"></script>
     <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="../common/map.js"></script>
@@ -17,8 +18,11 @@
   </head>
 
   <body onload="renderMap();">
-    <h1 style="font-family:'Lucida Console', monospace" id="covid19Stats">Last update: 9 July, 2020 (IST)</h1>
-    <div id="map" style="width: 100%; height: 95%;"></div>
+    <h1 style="font-family:'Lucida Console', monospace" id="covid19Stats">Last update: 10 July, 2020 (IST)</h1>
+    <div id="map" style="width: 100%; height: 50%;"></div>
+    <table id="data-table">
+      <tr><td><h3>Name</h3></td><td><h3>Address</h3></td><td><h3>Map Status</h3></td></tr>
+    </table>
   </body>
 
   </html>
