@@ -47,10 +47,8 @@ function renderMap() {
     if (dataTable) {
         var newRow;
         var mappedStatus = "Location Unavailable";
-        if(!mapped){
-          newRow = dataTable.insertRow(1);
-        }else{
-          newRow = dataTable.insertRow(dataTable.rows.length);
+        newRow = dataTable.insertRow(1);
+        if(mapped){
           mappedStatus = "Mapped";
         }
         var nameCell = newRow.insertCell(0);
