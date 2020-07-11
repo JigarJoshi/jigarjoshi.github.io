@@ -55,7 +55,7 @@ function renderMap() {
         var nameCell = newRow.insertCell(1);
         var addressCell = newRow.insertCell(2);
         var mapStatusCell = newRow.insertCell(3);
-        srNoCell.appendChild(document.createTextNode((locations.length - i).toString()));
+        srNoCell.appendChild(document.createTextNode(i.toString()));
         nameCell.appendChild(document.createTextNode(name));
         addressCell.appendChild(document.createTextNode(address));
         mapStatusCell.appendChild(document.createTextNode(mappedStatus));
