@@ -51,11 +51,11 @@ function renderMap() {
         if(mapped){
           mappedStatus = "Mapped";
         }
-        var srNoCell = newRow.insertCell(1);
-        var nameCell = newRow.insertCell(2);
-        var addressCell = newRow.insertCell(3);
-        var mapStatusCell = newRow.insertCell(4);
-        srNoCell.appendChild(document.createTextNode(locations.length - i));
+        var srNoCell = newRow.insertCell(0);
+        var nameCell = newRow.insertCell(1);
+        var addressCell = newRow.insertCell(2);
+        var mapStatusCell = newRow.insertCell(3);
+        srNoCell.appendChild(document.createTextNode((locations.length - i).toString());
         nameCell.appendChild(document.createTextNode(name));
         addressCell.appendChild(document.createTextNode(address));
         mapStatusCell.appendChild(document.createTextNode(mappedStatus));
